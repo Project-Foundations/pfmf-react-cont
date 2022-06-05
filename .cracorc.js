@@ -16,7 +16,7 @@ module.exports = () => ({
           filename: "remoteEntry.js",
           exposes: {},
           remotes: {
-            products: "products@http://localhost:3001/remoteEntry.js",
+            mfProducts: "mfProducts@http://localhost:3001/remoteEntry.js",
           },
           shared: {
             ...deps,
@@ -28,6 +28,10 @@ module.exports = () => ({
               singleton: true,
               requiredVersion: deps["react-dom"],
             },
+            "react-router-dom": {
+              singleton: true,
+              requiredVersion: deps["react-router-dom"],
+            }
           },
         }),
       ],

@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
-// @ts-ignore
-const ProductRuntime = React.lazy(() => import('products/Product'));
+import { Main } from './Main';
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <h1>App</h1>
-      <ProductRuntime />
-    </div>
+      <Main />
+    </BrowserRouter>
   );
 }
 
