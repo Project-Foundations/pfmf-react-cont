@@ -13,6 +13,8 @@ module.exports = () => ({
       add: [
         new ModuleFederationPlugin({
           name: "cont",
+          filename: "remoteEntry.js",
+          exposes: {},
           remotes: {
             products: "products@http://localhost:3001/remoteEntry.js",
           },
