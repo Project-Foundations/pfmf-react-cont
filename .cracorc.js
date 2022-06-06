@@ -20,6 +20,9 @@ module.exports = () => ({
           },*/
           shared: {
             ...deps,
+            core: {
+              singleton: true,
+            },
             react: {
               singleton: true,
               requiredVersion: deps.react,
