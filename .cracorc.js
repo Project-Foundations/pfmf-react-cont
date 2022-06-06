@@ -15,9 +15,9 @@ module.exports = () => ({
           name: "cont",
           filename: "remoteEntry.js",
           exposes: {},
-          remotes: {
+          /*remotes: {
             mfProducts: "mfProducts@http://localhost:3001/remoteEntry.js",
-          },
+          },*/
           shared: {
             ...deps,
             react: {

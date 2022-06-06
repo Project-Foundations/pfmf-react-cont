@@ -5,10 +5,10 @@ import { Main } from './Main';
 
 function App() {
   return (
-    <BrowserRouter>
+    <div>
       <h1>App</h1>
       <Main />
-    </BrowserRouter>
+    </div>
   );
 }
 
