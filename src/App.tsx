@@ -1,15 +1,21 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { QueryClient, QueryClientProvider } from 'react-query';
 
-import { Main } from './Main';
+import { AppRoute } from './app.route';
 
-function App() {
-  return (
-    <div>
-      <h1>App</h1>
-      <Main />
-    </div>
-  );
-}
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false
+    }
+  }
+});
+
+const App = (): JSX.Element => (
+  <QueryClientProvider client={queryClient}>
+    <AppRoute />
+  </QueryClientProvider>
+);
+
 
 export default App;

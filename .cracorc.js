@@ -23,6 +23,9 @@ module.exports = () => ({
             core: {
               singleton: true,
             },
+            layout: {
+              singleton: true,
+            },
             react: {
               singleton: true,
               requiredVersion: deps.react,
