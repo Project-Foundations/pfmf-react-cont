@@ -1,3 +1,16 @@
-import { FC } from 'react';
+import { FC } from "react";
 
-export const HomePage: FC = (): JSX.Element => <div>Hola Mundo</div>;
+//import { MFRemote } from "core";
+
+export const HomePage: FC = (): JSX.Element => (
+  <div>
+    Hola Mundo
+    {/*<MFRemote
+      microFrontend={{
+        url: '//localhost:3001/remoteEntry.js',
+        scope: 'mfProducts',
+        module: './Products',
+      }}
+    />*/}
+  </div>
+);
