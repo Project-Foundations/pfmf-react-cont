@@ -6,7 +6,7 @@ module.exports = () => ({
   webpack: {
     configure: {
       output: {
-        publicPath: "auto",
+        publicPath: 'auto',
       },
     },
     plugins: {
